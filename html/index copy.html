@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Copy Memorial Plan</title>
+  <title>Memorial Plan Copy</title>
   <link rel="stylesheet" href="../styles/style copy.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/swiper-bundle.min.css">
 </head>
 <body>
+  <div class="arrow-btn">
+    <a href="#nav-bar"><span class="fas fa-angle-up"></span></a>
+  </div>
   <div class="wrapper">
-    <header class="nav-bar"">
+    <header class="nav-bar" id="nav-bar">
       <!-- <img src="../imgs/logo.svg" alt="Alex Libing Things" class="logo"> -->
       <p class="logo">LIBING <span class="logo-highlight">THINGS</span></p>
       <nav>
@@ -25,7 +26,7 @@
           <li><a href="#installments">Installments</a></li>
         </ul>
       </nav>
-      <a href="#"><button class="cta">Contact Us</button></a>
+      <a href="#contact"><button class="cta">Contact Us</button></a>
     </header>
     <header class="banner-section">
       <img class="banner" src="../imgs/green-tree-one.jpg">
@@ -70,6 +71,9 @@
         </div>
         <div class="category" id="category">
           <div class="plan-grid">
+
+            <!-- REGULAR SECTION -->
+
             <div class="container">
               <div class="plan-option" tabindex="1">
                 <div class="front">
@@ -137,8 +141,8 @@
                     </div>
                   </div>
                   <div class="button-section">
-                    <a href="#installments">
-                      <button class="back-installment-info-button">
+                    <a href="#installment-header">
+                      <button class="back-installment-info-button" id="regular-button">
                         INSTALLMENTS
                       </button>
                     </a>
@@ -146,6 +150,9 @@
                 </div>
               </div>
             </div>
+
+            <!-- INNER WALK SECTION -->
+
             <div class="container">
               <div class="plan-option" tabindex="2">
                 <div class="front">
@@ -213,13 +220,18 @@
                     </div>
                   </div>
                   <div class="button-section">
-                    <button class="back-installment-info-button">
-                      INSTALLMENTS
-                    </button>
+                    <a href="#installment-header">
+                      <button class="back-installment-info-button" id="inner-walk-button">
+                        INSTALLMENTS
+                      </button>
+                    </a> 
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- WALK SECTION -->
+
             <div class="container">
               <div class="plan-option" tabindex="3">
                 <div class="front">
@@ -287,13 +299,18 @@
                     </div>
                   </div>
                   <div class="button-section">
-                    <button class="back-installment-info-button">
-                      INSTALLMENTS
-                    </button>
+                    <a href="#installment-header">
+                      <button class="back-installment-info-button" id="walk-button">
+                        INSTALLMENTS
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- INNER DRIVE SECTION -->
+
             <div class="container">
               <div class="plan-option" tabindex="4">
                 <div class="front">
@@ -361,13 +378,18 @@
                     </div>
                   </div>
                   <div class="button-section">
-                    <button class="back-installment-info-button">
-                      INSTALLMENTS
-                    </button>
+                    <a href="#installment-header">
+                      <button class="back-installment-info-button" id="inner-drive-button">
+                        INSTALLMENTS
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- DRIVE SECTION -->
+
             <div class="container">
               <div class="plan-option" tabindex="5">
                 <div class="front">
@@ -435,17 +457,27 @@
                     </div>
                   </div>
                   <div class="button-section">
-                    <button class="back-installment-info-button">
-                      INSTALLMENTS
-                    </button>
+                    <a href="#installment-header">
+                      <button class="back-installment-info-button" id="drive-button">
+                        INSTALLMENTS
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- INSTALLMENTS  REGULAR CATEGORY -->
+
           <div class="installment" id="installments">
+            <div class="installment-category">
+              <p class="installment-category-title" id="installment-header">
+                REGULAR PLANS
+              </p>
+            </div>
             <div class="slide-container swiper">
-              <div class="slide-content">
+              <div class="slide-content regular-slide" id="installments-regular-slides">
                 <div class="slide-wrapper swiper-wrapper">
                   <div class="slide-card swiper-slide">
                     <div class="image-content">
@@ -523,7 +555,7 @@
                     <div class="image-content">
                       <span class="overlay"></span>
                       <div class="card-image">
-                        <img src="../imgs/Three.svg" alt="" class="card-img">
+                        <img src="../imgs/three.svg" alt="" class="card-img">
                       </div>
                       <div class="plan-length">
                         <p class="plan-length-title">Three Year Installment</p>
@@ -595,7 +627,7 @@
                     <div class="image-content">
                       <span class="overlay"></span>
                       <div class="card-image">
-                        <img src="../imgs/thirty-days.svg" alt="" class="card-img thirty-days">
+                        <img src="../imgs/calendar.svg" alt="" class="card-img thirty-days">
                       </div>
                       <div class="plan-length">
                         <p class="plan-length-title">Thirty Day Installment</p>
@@ -631,7 +663,7 @@
                     <div class="image-content">
                       <span class="overlay"></span>
                       <div class="card-image">
-                        <img src="../imgs/three.svg" alt="" class="card-img">
+                        <img src="../imgs/calendar.svg" alt="" class="card-img">
                       </div>
                       <div class="plan-length">
                         <p class="plan-length-title">Sixty Day Installment</p>
@@ -665,16 +697,732 @@
                   </div>
                 </div>
               </div>
+
+              <!-- INSTALLMENTS  INNER WALK CATEGORY -->
+
+              <div style="display: none;" class="slide-content" id="installments-inner-walk-slide">
+                <div class="slide-wrapper swiper-wrapper">
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/one.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">One Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">6,904</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">69,420</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,440</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/two.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Two Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/three.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Three Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/spot-cash.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Spot Cash Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/calendar.svg" alt="" class="card-img thirty-days">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Thirty Day Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/calendar.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Sixty Day Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INSTALLMENTS  WALK CATEGORY -->
+
+              <div style="display: none;" class="slide-content" id="installments-walk-slide">
+                <div class="slide-wrapper swiper-wrapper">
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/one.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">One Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">6,904</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">69,420</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,440</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/two.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Two Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/three.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Three Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/spot-cash.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Spot Cash Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/calendar.svg" alt="" class="card-img thirty-days">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Thirty Day Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/calendar.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Sixty Day Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INSTALLMENT INNER DRIVE CATEGORY -->
+
+              <div style="display: none;" class="slide-content" id="installments-inner-drive-slide">
+                <div class="slide-wrapper swiper-wrapper">
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/one.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">One Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">6,904</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">69,420</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,440</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/two.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Two Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/three.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Three Year Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/spot-cash.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Spot Cash Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/calendar.svg" alt="" class="card-img thirty-days">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Thirty Day Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-card swiper-slide">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+                      <div class="card-image">
+                        <img src="../imgs/calendar.svg" alt="" class="card-img">
+                      </div>
+                      <div class="plan-length">
+                        <p class="plan-length-title">Sixty Day Installment</p>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="plan-breakdown">
+                        <div class="pricing">
+                          <p class="interest-percent">Interest (15%): </p>
+                        </div>
+                        <div class="amount">
+                          <p class="interest-percent-amount">2,236</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="contract-price">Contract Price: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="contract-price-amount">18,796</p>
+                        </div>
+                        <div class="pricing">
+                          <p class="monthly-price">Monthly Pay: </p>
+                        </div>
+                        <div class="amount">
+                          <p class="monthly-price-amount">1,428</p>
+                        </div>
+                      </div>
+                      <div class="choose-plan">
+                        <button class="choose-plan-button">Choose Plan</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SWIPER NAVIGATION -->
+
               <div class="swiper-button-next swiper-navBtn"></div>
               <div class="swiper-button-prev swiper-navBtn"></div>
               <div class="swiper-pagination"></div>
             </div>
+
+            <!-- FOOTER SECTION -->
+
+            <footer id="contact">
+              <!-- <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div> -->
+              <ul class="social-icon">
+                <li>
+                  <a href="https://facebook.com">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://youtube.com">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://reddit.com">
+                    <ion-icon name="logo-reddit"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu">
+                <li><a href="#nav-bar">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#category">Category</a></li>
+                <li><a href="#installments">Installments</a></li>
+                <li><a href="https://mail.google.com">Gmail</a></li>
+              </ul>
+              <p>&#169;2023 Programmin Logic 2 | All Rights Reserved</p>
+            </footer>
           </div>
         </div>
       </div>
     </section>
+    
   </div>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/8fb3cb03c2.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="../js/swiper-bundle.min.js"></script>
 <script src="../js/script.js"></script>
 </html>

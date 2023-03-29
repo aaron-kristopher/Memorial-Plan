@@ -1,0 +1,299 @@
+:root {
+    --linear-gradient: linear-gradient(155deg, rgba(40,80,46,1) 0%, rgba(19,37,41,1) 100%);
+    --primary-color: #28502e;
+    --secondary-color: #A1B33E;
+    --accent-color: #FFFBCE;
+    --black-color: #24252a;
+    --grey-color: #535353;
+    --white-color: #EEFDEF;
+    --primary-shadow-color: rgba(0, 0, 0, 0.6);
+    --highlight-shadow-color: rgba(21, 112, 108, 0.8);
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background:rgba(161, 179, 62, 0.4);
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+section {
+    background-color: var(--white-color);
+}
+
+li, a, button{
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.nav-bar {
+    background: var(--linear-gradient);
+    display: flex;
+    justify-content: flex-end;
+    align-items: top;
+    align-items: center;
+    padding: 0.7em 2em;
+    background-color: var(--primary-color);
+    box-shadow: 0px 2px 5px var(--black-color);
+}
+
+
+.logo {
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-right: auto;
+}
+
+.logo-highlight {
+    color: var(--secondary-color);
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav__links li a:hover {
+    color: var(--secondary-color);
+}
+
+.cta {
+    padding: 0.5em 1.5em;
+    background-color: var(--accent-color);
+    color: var(--black-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    margin-left: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* INVOICE SECTION */
+
+.invoice {
+    display: flex;
+    place-self: center;
+    margin-block: 50px;
+    margin-inline: clamp(50px, 5%, 200px);
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--primary-shadow-color);
+}
+
+.invoice-info {
+    border-radius: 5px 0 0 5px  ;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.5;
+    justify-content: space-evenly;
+    color: white;
+    padding: 2.2rem 3.1rem;
+    background: var(--linear-gradient);
+}
+
+.invoice-info #name .description {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.invoice-info #name {
+    font-size: 1.5rem;
+}
+
+.invoice-info .info-description {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.invoice-info .description {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: rgb(212, 212, 212);
+    margin-block: 1.2rem 0.3rem;
+}
+
+.invoice-info .info-description:nth-child(1)::after,
+.invoice-info .info-description:nth-child(2)::after,
+.invoice-info .info-description:nth-child(3)::after,
+.invoice-info .info-description:nth-child(4)::after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 1.5rem;
+    background: var(--grey-color);
+}
+
+/* AMORTIZATION */
+
+.invoice .amortization-section {
+    border-radius: 0 5px 5px 0;
+    flex-grow: 2;
+    background: var(--white-color);
+    padding: 2.2rem 3.1rem 2.5rem;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+.amortization-section .date-section {
+    display: flex;
+    align-items: center;
+}
+
+
+.amortization-section .date-section .information {
+    text-align: end;
+}
+
+.amortization-section .date-section .logo {
+    color: var(--primary-color);
+}
+
+.amortization-section .line-break::after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 0.5rem;
+    background: var(--grey-color);
+}
+
+/* AMORTIZATION HEADER */
+
+.amortization-header {
+    margin-block: 2.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--black-color)
+}
+
+/* AMORTIZATION BREAKDOWN */
+
+.plan-breakdown {
+    display: flex;
+    flex-direction: column;
+    margin-block: 2.5rem;
+}
+
+.plan-breakdown .plan-breakdown--header {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+.plan-breakdown .breakdown {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 2rem;
+}
+
+.plan-breakdown .breakdown .amount {
+    text-align: end;
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+/* INVOICE ID */
+
+.invoice-id {
+    margin: 1rem 0;
+    text-align: end;
+}
+
+/* ICON */
+
+/* FOOTER SECTION */
+
+footer {
+    width: 100%;
+    background-color: var(--black-color);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+footer .social-icon,
+footer .menu {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social-icon li a {
+    font-size: 2em;
+    color: var(--white-color);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+footer .menu li a {
+    font-weight: 200;
+    font-size: 1.2em;
+    color: var(--white-color);
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+footer .menu li a:hover {
+    opacity: 0.2;
+}
+
+ion-icon {
+    font-size: 30px;
+}
+
+footer p {
+    justify-content: center;
+    color: var(--white-color);
+    margin-inline: 15px 10px;
+    font-size: 1.1 em;
+    opacity: 0.75;
+}

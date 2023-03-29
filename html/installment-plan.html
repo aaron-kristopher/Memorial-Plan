@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memorial Plan</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memorial Plan</title>
+  <link rel="stylesheet" href="../styles/installment.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    
+
+	<!-- HEADER SECTION -->
+
+	<header class="nav-bar" id="nav-bar">
+		<p class="logo">LIBING <span class="logo-highlight">THINGS</span></p>
+		<nav>
+			<ul class="nav__links">
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="index.html#category">Category</a></li>
+				<li><a href="index.html#installments">Installments</a></li>
+			</ul>
+		</nav>
+		<a href="#contact"><button class="cta">Contact Us</button></a>
+	</header>
+
+	<!-- CONTENT SECTION -->
+
+	<div class="invoice">
+		<div class="invoice-info">
+			<p class="info-description" id="name">
+				<span class="description">Name:</span> Aaron Lim				
+			</p>
+			<p class="info-description" id="plan-category">
+				<span class="description">Category:</span> Inner Drive
+			</p>
+			<p class="info-description" id="installment-plan">
+				<span class="description">Installment Plan:</span> 1 Year Installment
+			</p>
+			<p class="info-description" id="date">
+				<span class="description">Date:</span> 27 March
+			</p>
+			<p class="info-description" id="card-number">
+				<span class="description">Card Number:</span> 985-7345-5437
+			</p>
+		</div>
+		<div class="amortization-section">
+			<div class="date-section">
+				<p class="logo">
+					Libing Things
+				</p>
+				<p class="information">
+					27 March 2022 08:30:00
+				</p>
+			</div>
+			<div class="line-break"></div>
+			<div class="amortization">
+				<div class="amortization-header">
+					<p id="installment-plan">
+						INNER DRIVE (1 Year Installment)
+					</p>
+				</div>
+				<div class="plan-breakdown">
+					<div class="plan-breakdown--header">
+						<div class="description">
+							Description
+						</div>
+						<div class="amount">
+							Amount
+						</div>
+					</div>
+					<div class="breakdown">
+						<div class="pricing">
+							<p class="initial-lot-price">Lot Price: </p>
+							<p class="vat-percent">VAT (12%): </p>
+							<p class="vat-percent">Lot Price (VAT): </p>
+							<p class="pcf-price">PCF: </p>
+							<p class="price">Selling Price: </p>
+							<p class="downpayment">Down Pay (10%): </p>
+							<p class="price">Balance Price: </p>
+						</div>
+						<div class="amount">
+							<p id="initial-lot-price-amount">16,300</p>
+							<p id="vat-percent-amount">1,956</p>
+							<p id="vat-percent-amount">18,256</p>
+							<p id="pcf-price-amount">2,000</p>
+							<p id="price-amount">22,104</p>
+							<p id="downpayment-amount">2,210</p>
+							<p id="price-amount">19,894</p>
+						</div>
+					</div>
+				</div>
+				<div class="line-break"></div>
+				<div class="invoice-id">
+					<p>
+						Invoice ID: <span class="invoice-id">0912353</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER SECTION -->
+
+	<footer id="contact">
+		<ul class="social-icon">
+			<li>
+				<a href="https://facebook.com">
+					<ion-icon name="logo-facebook"></ion-icon>
+				</a>
+			</li>
+			<li>
+				<a href="https://instagram.com">
+					<ion-icon name="logo-instagram"></ion-icon>
+				</a>
+			</li>
+			<li>
+				<a href="https://youtube.com">
+					<ion-icon name="logo-youtube"></ion-icon>
+				</a>
+			</li>
+			<li>
+				<a href="https://reddit.com">
+					<ion-icon name="logo-reddit"></ion-icon>
+				</a>
+			</li>
+		</ul>
+		<ul class="menu">
+			<li><a href="#nav-bar">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#category">Category</a></li>
+			<li><a href="#installments">Installments</a></li>
+			<li><a href="https://mail.google.com">Gmail</a></li>
+		</ul>
+		<p>&#169;2023 Programmin Logic 2 | All Rights Reserved</p>
+	</footer>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/8fb3cb03c2.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="../js/script.js"></script>
 </html>

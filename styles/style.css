@@ -1,4 +1,5 @@
 :root {
+    --linear-gradient: linear-gradient(155deg, rgba(40,80,46,1) 0%, rgba(19,37,41,1) 100%);
     --primary-color: #28502e;
     --secondary-color: #A1B33E;
     --accent-color: #FFFBCE;
@@ -15,6 +16,7 @@
     /* font-family: 'Libre Bodoni', serif; */
     font-family: 'Poppins', sans-serif;
     transition: all .3s ease;
+    box-sizing: border-box;
 }
 
 body {
@@ -42,12 +44,14 @@ li, a, button{
 }
 
 .nav-bar {
+    background: rgb(40,80,46);
+    background: linear-gradient(155deg, rgba(40,80,46,1) 0%, rgba(19,37,41,1) 100%);
     display: flex;
     justify-content: flex-end;
     align-items: top;
     align-items: center;
     padding: 0.7em 2em;
-    background-color: var(--primary-color);
+    /* background: var(--linear-gradient); */
     box-shadow: 0px 2px 5px var(--black-color);
 }
 
@@ -86,7 +90,7 @@ li, a, button{
 }
 
 .nav__links li a:hover {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .cta {
@@ -181,7 +185,8 @@ button:hover {
 
 .about-text-grid {
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    background-color: var(--primary-color);
+    background: rgb(40,80,46);
+    background: linear-gradient(155deg, rgba(40,80,46,1) 0%, rgba(19,37,41,1) 100%);
     color: var(--white-color);
     grid-row: 1 / 5;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
@@ -252,7 +257,7 @@ button:hover {
     content: "";
     height: 2px;
     width: 50vw;
-    background-color: var(--primary-color);
+    background: var(--linear-gradient);
     position: absolute;
     top: 50%;
     right: -200px;
@@ -263,7 +268,7 @@ button:hover {
     content: "";
     height: 2px;
     width: 50vw;
-    background-color: var(--primary-color);
+    background: var(--linear-gradient);
     position: absolute;
     top: 50%;
     left: -200px;
@@ -316,7 +321,7 @@ button:hover {
 }
 
 .green {
-    background-color: var(--primary-color);
+    background: var(--linear-gradient);
     color: var(--white-color);
     padding: .5em 1.5em;
     border-radius: 10px;
@@ -364,7 +369,7 @@ button:hover {
 
 .back {
     transform: rotateY(180deg);
-    background-color: var(--primary-color);
+    background: var(--linear-gradient);
     color: var(--white-color)
 
 }
@@ -402,6 +407,15 @@ button:hover {
     padding: 15px 20px;
 }
 
+.back .plan-pricing .amount {
+    color: var(--white-color);
+}
+
+.plan-pricing .amount {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
 .amount {
     text-align: right;
 }
@@ -414,13 +428,15 @@ button:hover {
     justify-content: center;
     margin: 20px 0px;
 }
+.installment-info-button {
+    background: var(--linear-gradient);
+}
 
 .back-installment-info-button,
 .installment-info-button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    background-color: var(--primary-color);
     border-radius: 10px;
     color: var(--white-color);
     border: none;
@@ -441,11 +457,19 @@ button:hover {
 
 .back-installment-info-button {
     padding: 0.5em 1.5em;
-    background-color: var(--accent-color);
+    background-color: var(--white-color);
     color: var(--black-color);
 }
 
 /* CAROUSEL SECTION */
+
+/* INSTALLMENT TITLE */
+
+.installment-category {
+    display: flex;
+    justify-content: center;
+    margin-block: 10px;
+}
 
 .installment {
     background-color: var(--white-color);
@@ -454,12 +478,13 @@ button:hover {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin-bottom: 500px;
+    padding-top: 30px;
 }
 
 .slide-container {
     max-width: 1250px;
     width: 100%;
+    margin-bottom: 125px;
 }
 
 .card-image {
@@ -489,7 +514,7 @@ button:hover {
 }
 
 .card-content {
-    padding: 10px 30px;
+    padding: 10px 40px;
     border-radius: 0px 0px 25px 25px;
     background-color: #fdfbe8;
 }
@@ -521,14 +546,19 @@ button:hover {
     display: grid;
     grid-template-columns: 4fr 1fr;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--black-color);
     margin: 20px 0px;
 }
 
+.plan-breakdown .amount {
+    font-weight: 900;
+    color: var(--linear-gradient);
+}
+
 .choose-plan-button {
     padding: 0.5em 1.5em;
-    background-color: var(--primary-color);
+    background: var(--linear-gradient);
     color: var(--white-color);
     border: none;
     border-radius: 50px;
@@ -559,7 +589,7 @@ button:hover {
     display: flex;
     left: 0;
     top: 0;
-    background-color: var(--primary-color);
+    background: var(--linear-gradient);
 }
 .overlay::before,
 .overlay::after {
@@ -569,12 +599,16 @@ button:hover {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: var(--primary-color);
+    background: rgba(19,37,41,1) 100%;
 }
 
 .overlay::after {
-    border-radius: 0 25px 0 0;
+    border-radius: 0 25px 0 30px;
     background-color:  #fdfbe8;
+}
+
+.overlay::before {
+    border-radius: 0 0 0 40px;
 }
 
 .swiper-navBtn {
@@ -631,5 +665,142 @@ button:hover {
     list-style: 39px;
     font-size: 37px;
     z-index: 9;
-    
 }
+
+/* INSTALLMENT HEADER */
+
+.installment-category-title {
+    font-size: 6vh;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* FOOTER SECTION */
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--black-color);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+footer .social-icon,
+footer .menu {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social-icon li a {
+    font-size: 2em;
+    color: var(--white-color);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+footer .menu li a {
+    font-weight: 200;
+    font-size: 1.2em;
+    color: var(--white-color);
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+footer .menu li a:hover {
+    opacity: 0.2;
+}
+
+ion-icon {
+    font-size: 30px;
+}
+
+footer p {
+    color: var(--white-color);
+    text-align: cener;
+    margin-inline: 15px 10px;
+    font-size: 1.1 em;
+    opacity: 0.75;
+}
+/* 
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../imgs/wave.png");
+    background-size: 1000px 100px;
+    filter: brightness(0);
+    -webkit-filter: brightness(0);
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 0.9;
+    bottom: 0;
+    animation: animateWave 3.5s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.2;
+    bottom: 10px;
+    animation: animateWave-02 2s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 998;
+    opacity: 1;
+    bottom: 15;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 997;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave-02 5s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position: 1000px;
+    }
+
+    100% {
+        background-position: 0px;
+    }
+}
+
+@keyframes animateWave-02 {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 1000px;
+    }
+} */
