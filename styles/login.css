@@ -113,6 +113,25 @@ button:hover {
 
 /* SECTION */
 
+.background {
+    background: url("/imgs/green-tree-one.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-background {
+    background: url("/imgs/green-tree-one.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    filter: brightness(65%);
+    -webkit-filter: brightness(70%) blur(1px);
+}
+
 .container {
     position: absolute;
     left: 50%;
@@ -120,8 +139,7 @@ button:hover {
     transform: translate(-50%, -50%);
     width: 75%;
     height: 550px;
-    margin-top: 3rem;
-    background: var(--secondary-color);
+    margin-top: 5rem;
     border-radius: 10px;
 }
 
@@ -132,7 +150,7 @@ button:hover {
     width: 58%;
     height: 100%;
     color: var(--white-color);
-    background-color: var(--primary-color);
+    background-color: transparent;
     padding: 80px;
     display: flex;
     justify-content: space-between;
@@ -140,15 +158,170 @@ button:hover {
 }
 
 .item .logo {
+    text-shadow: 0 0 10px var(--primary-shadow-color);
     font-size: 1.8rem;
 }
 
 .text-item h2 {
+    text-shadow: 0 0 10px var(--primary-shadow-color);
     font-size: 40px;
 }
 
 .text-item p {
+    text-shadow: 0 0 10px var(--primary-shadow-color);
     font-size: 1rem;
     margin: 20px 0;
+}
 
+.container .login-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    color: var(--white-color);
+}
+
+.login-section .form-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-section .form-box h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.form-box .input-box {
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid var(--white-color);
+    margin: 30px 0;
+    position: relative;
+}
+
+.form-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    color: var(--white-color);
+}
+
+.form-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 0.9rem;
+    right: 0;
+    font-size: 1.3rem;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input::-webkit-outer-spin-button,
+.input-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+    background: var(--accent-color);
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-shadow-color);
+    padding-block: 1em;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--black-color);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+    margin-top: auto;
+
+}
+
+footer .social-icon,
+footer .menu {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social-icon li a {
+    font-size: 2em;
+    color: var(--white-color);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+footer .menu li a {
+    font-weight: 200;
+    font-size: 1.2em;
+    color: var(--white-color);
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+footer .menu li a:hover {
+    opacity: 0.2;
+}
+
+ion-icon {
+    font-size: 30px;
+}
+
+footer p {
+    justify-content: center;
+    color: var(--white-color);
+    margin-inline: 15px 10px;
+    font-size: 1.1 em;
+    opacity: 0.75;
 }
