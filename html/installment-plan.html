@@ -31,21 +31,43 @@
 
 	<div class="invoice">
 		<div class="invoice-info">
-			<p class="info-description" id="name">
-				<span class="description">Name:</span> Aaron Lim				
-			</p>
-			<p class="info-description" id="plan-category">
-				<span class="description">Category:</span> Inner Drive
-			</p>
-			<p class="info-description" id="installment-plan">
-				<span class="description">Installment Plan:</span> 1 Year Installment
-			</p>
-			<p class="info-description" id="date">
-				<span class="description">Date:</span> 27 March
-			</p>
-			<p class="info-description" id="card-number">
-				<span class="description">Card Number:</span> 985-7345-5437
-			</p>
+			<div class="section">
+				<p class="info-description">
+					<span class="description">Name:</span> <span id="name">Aaron Lim</span> 				
+				</p>
+			</div>
+			<div class="section">
+				<div class="information">
+					<ion-icon name="document-text-outline"></ion-icon>
+					<p class="info-description">
+						<span class="description">Category:</span> <span id="installment-category">Inner Drive</span> 
+					</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="information">
+					<ion-icon name="wallet-outline"></ion-icon>
+					<p class="info-description">
+						<span class="description">Payment:</span> <span id="installment-plan">1 Year Installment</span> 
+					</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="information">
+					<ion-icon name="calendar-outline"></ion-icon>
+					<p class="info-description">
+						<span class="description">Date:</span> <span id="date">27 March</span> 
+					</p>
+				</div>
+			</div>
+			<div class="section">
+				<div class="information">
+					<ion-icon name="card-outline"></ion-icon>
+					<p class="info-description">
+						<span class="description">Card Number:</span> <span id="card-number">985-7345-5437</span> 
+					</p>
+				</div>
+			</div>
 		</div>
 		<div class="amortization-section">
 			<div class="date-section">
@@ -53,7 +75,7 @@
 					Libing Things
 				</p>
 				<p class="information">
-					27 March 2022 08:30:00
+					27 March 2022  08:30:00
 				</p>
 			</div>
 			<div class="line-break"></div>
@@ -81,6 +103,9 @@
 							<p class="price">Selling Price: </p>
 							<p class="downpayment">Down Pay (10%): </p>
 							<p class="price">Balance Price: </p>
+							<p class="interest-percent">Interest (15%): </p>
+							<p class="contract-price">Contract Price: </p>
+							<p class="monthly-price">Monthly Pay: </p>
 						</div>
 						<div class="amount">
 							<p id="initial-lot-price-amount">16,300</p>
@@ -90,6 +115,24 @@
 							<p id="price-amount">22,104</p>
 							<p id="downpayment-amount">2,210</p>
 							<p id="price-amount">19,894</p>
+							<p class="interest-percent-amount">2,236</p>
+							<p class="contract-price-amount">18,796</p>
+							<p class="monthly-price-amount">1,428</p>
+						</div>
+					</div>
+				</div>
+				<div class="line-break"></div>
+				<div class="plan-breakdown">
+					<div class="breakdown">
+						<div class="pricing">
+							<p class="interest-percent">Interest (15%): </p>
+							<p class="contract-price">Contract Price: </p>
+							<p class="monthly-price">Monthly Pay: </p>
+						</div>
+						<div class="amount">
+							<p class="interest-percent-amount">2,236</p>
+							<p class="contract-price-amount">18,796</p>
+							<p class="monthly-price-amount">1,428</p>
 						</div>
 					</div>
 				</div>
@@ -108,23 +151,23 @@
 	<footer id="contact">
 		<ul class="social-icon">
 			<li>
-				<a href="https://facebook.com">
+				<a href="#" onclick='window.open("https://facebook.com");return false;'>
 					<ion-icon name="logo-facebook"></ion-icon>
 				</a>
 			</li>
 			<li>
-				<a href="https://instagram.com">
-					<ion-icon name="logo-instagram"></ion-icon>
-				</a>
-			</li>
-			<li>
-				<a href="https://youtube.com">
+				<a href="#" onclick='window.open("https://youtu.be/dQw4w9WgXcQ");return false;'>
 					<ion-icon name="logo-youtube"></ion-icon>
 				</a>
 			</li>
 			<li>
-				<a href="https://reddit.com">
-					<ion-icon name="logo-reddit"></ion-icon>
+				<a href="#" onclick='window.open("https://linkedin.com");return false;'>
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a>
+			</li>
+			<li>
+				<a href="#" onclick='window.open("https://github.com/aaron-kristopher/Memorial-Plan.git");return false;'>
+					<ion-icon name="logo-github"></ion-icon>
 				</a>
 			</li>
 		</ul>
@@ -135,7 +178,7 @@
 			<li><a href="#installments">Installments</a></li>
 			<li><a href="https://mail.google.com">Gmail</a></li>
 		</ul>
-		<p>&#169;2023 Programmin Logic 2 | All Rights Reserved</p>
+		<p>&#169;2023 Programming Logic 2 | All Rights Reserved</p>
 	</footer>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

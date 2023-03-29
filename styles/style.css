@@ -89,6 +89,22 @@ li, a, button{
     transition: all 0.3 ease 0s;
 }
 
+.nav__links li a::after {
+    margin: 0;
+    content: " ";
+    display: block;
+    height: 3px;
+    background: var(--secondary-color);
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.nav__links li a:hover::after {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .nav__links li a:hover {
     color: var(--secondary-color);
 }

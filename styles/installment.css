@@ -18,9 +18,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     padding: 0px;
     background:rgba(161, 179, 62, 0.4);
+    min-height: 100vh;
 }
 
 p {
@@ -77,6 +80,22 @@ li, a, button{
     transition: all 0.3 ease 0s;
 }
 
+.nav__links li a::after {
+    margin: 0;
+    content: " ";
+    display: block;
+    height: 3px;
+    background: var(--secondary-color);
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.nav__links li a:hover::after {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .nav__links li a:hover {
     color: var(--secondary-color);
 }
@@ -100,7 +119,6 @@ button:hover {
 
 .invoice {
     display: flex;
-    place-self: center;
     margin-block: 50px;
     margin-inline: clamp(50px, 5%, 200px);
     border-radius: 5px;
@@ -119,37 +137,53 @@ button:hover {
 }
 
 .invoice-info #name .description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 0;
 }
 
 .invoice-info #name {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .invoice-info .info-description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
 .invoice-info .description {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: rgb(212, 212, 212);
-    margin-block: 1.2rem 0.3rem;
+    margin-block: 0 0.3rem;
 }
 
-.invoice-info .info-description:nth-child(1)::after,
-.invoice-info .info-description:nth-child(2)::after,
-.invoice-info .info-description:nth-child(3)::after,
-.invoice-info .info-description:nth-child(4)::after {
+/* ICON */
+
+.invoice-info ion-icon {
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(158, 157, 157);
+}
+
+.invoice-info .information {
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.invoice-info .section:nth-child(1)::after,
+.invoice-info .section:nth-child(2)::after,
+.invoice-info .section:nth-child(3)::after,
+.invoice-info .section:nth-child(4)::after {
     content: "";
     display: block;
     height: 1px;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     background: var(--grey-color);
 }
+
 
 /* AMORTIZATION */
 
@@ -227,8 +261,6 @@ button:hover {
     text-align: end;
 }
 
-/* ICON */
-
 /* FOOTER SECTION */
 
 footer {
@@ -241,6 +273,8 @@ footer {
     justify-content: center;
     flex-direction: column;
     bottom: 0;
+    margin-top: auto;
+
 }
 
 footer .social-icon,
